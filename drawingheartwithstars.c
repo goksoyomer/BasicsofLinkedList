@@ -7,7 +7,7 @@ int main()
     char str[]="PROJE BASARILI SONUCLANDI";///1 ve 1'den fazla kalp baskisi talebi olması durumunda yazılacak yazı.
     printf("KAC TANE KALP BASKISI CIKARTMAK ISTERSIN?:");
     scanf("%d",&kalpsayisi);///1 adet kalp genisligindeki sutunda alt alta kac adet kalbin bulunacagini veren sayi.
-    printf("VERDIGIN KALPLERI KACA KATINA CIKARALIM?:");
+    printf("KALP BASKISI SAYISINI KAC KATINA CIKARALIM?:");
     scanf("%d",&kalpkat);///1 adet kalp yuksekligindeki satırda kac adet kalbin yan yana bulunacagini veren sayi.
 
     if(kalpsayisi >= 1 && kalpkat >=0){///kalp olusturma talebinin olup olmadiginin kontrolu.
@@ -98,7 +98,7 @@ printf("\n");///bir satir icin tüm sütünlardaki islemler yapildiktan sonra al
     i++;
     }
     }else{
-    printf("[KALPSIZSIN ZALIM!]");
+    printf("MEVCUT TALEBINIZ BULUNMAMAKTADIR!");
 
     }
 getch();
