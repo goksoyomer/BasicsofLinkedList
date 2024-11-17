@@ -3,12 +3,12 @@
 
 int main()
 {
-    int h,i,j,boyut,kalpsayisi,kalpkat,k;///Kullanýlacak degiskenlerin ilaný.
-    char str[]="KALP KALBE KARSIDIR<3";///1 ve 1'den fazla kalp talebi olmasý durumunda yazýlacak yazý.
-    printf("KAC KALBINI VEREBILIRSIN?:");
+    int h,i,j,boyut,kalpsayisi,kalpkat,k;///KullanÄ±lacak degiskenlerin ilanÄ±.
+    char str[]="PROJE BASARILI SONUCLANDI";///1 ve 1'den fazla kalp baskisi talebi olmasÄ± durumunda yazÄ±lacak yazÄ±.
+    printf("KAC TANE KALP BASKISI CIKARTMAK ISTERSIN?:");
     scanf("%d",&kalpsayisi);///1 adet kalp genisligindeki sutunda alt alta kac adet kalbin bulunacagini veren sayi.
     printf("VERDIGIN KALPLERI KACA KATINA CIKARALIM?:");
-    scanf("%d",&kalpkat);///1 adet kalp yuksekligindeki satýrda kac adet kalbin yan yana bulunacagini veren sayi.
+    scanf("%d",&kalpkat);///1 adet kalp yuksekligindeki satÄ±rda kac adet kalbin yan yana bulunacagini veren sayi.
 
     if(kalpsayisi >= 1 && kalpkat >=0){///kalp olusturma talebinin olup olmadiginin kontrolu.
 
@@ -19,7 +19,7 @@ int main()
     for(h=1; h<=kalpsayisi; h++){///sutunda kalp sayisi kadar kalp olusmasini saglayan dongu.
 
 
-    for(i=1; i<=4; i++){///1 kalbýn yamuktan olusan kismindaki satýrlarý sayan dongu.
+    for(i=1; i<=4; i++){///1 kalbÄ±n yamuktan olusan kismindaki satÄ±rlarÄ± sayan dongu.
     //YAMUKLARDAN OLUSAN KISIM
        for(k=1; k<=kalpkat; k++){///1 kalbin iki yamuktan olusan kismindaki her bir satir icin sutunlari sayan dongu.
 
@@ -37,7 +37,7 @@ int main()
             printf("*");
 
         }
-        for(j=(14-(2*i+5)); j>=1; j--){///yamuklar arasýndaki boslugu saglayan dongu.
+        for(j=(14-(2*i+5)); j>=1; j--){///yamuklar arasÄ±ndaki boslugu saglayan dongu.
         if(k>=5){
             continue;
         }
@@ -60,7 +60,7 @@ int main()
 
        }
 
-printf("\n");///bir satir icin tüm sütünlardaki islemler yapildiktan sonra alt satira gecisin saglanmasi.
+printf("\n");///bir satir icin tÃ¼m sÃ¼tÃ¼nlardaki islemler yapildiktan sonra alt satira gecisin saglanmasi.
 
     }
     //UCGENDEN OLUSAN ALT KISIM
@@ -91,7 +91,7 @@ printf("\n");///bir satir icin tüm sütünlardaki islemler yapildiktan sonra alt s
   printf("\n");///bir satir icin tum sutunlar tamamlandiktan sonra alta gecmeyi saglayan ifade.
     }
     }
-    printf("\n\t");///yaziyi daha iyi ortalýyabilmek icin alta satira gecip 6-8 karakter bosluk birakan ifade.
+    printf("\n\t");///yaziyi daha iyi ortalÄ±yabilmek icin alta satira gecip 6-8 karakter bosluk birakan ifade.
     i=1;
     while(i<=9){
     printf("%3s ",str);///stringdeki ifadenin en alt satirdaki tum kalplerin altina gelecek yazi.
